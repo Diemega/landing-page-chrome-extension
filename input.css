@@ -24,32 +24,6 @@
   }
 }
 
-@layer utilities {
-  .bg-deep-purple {
-    @apply bg-deep-purple;
-  }
-
-  .bg-bright-blue {
-    @apply bg-bright-blue;
-  }
-
-  .bg-vibrant-pink {
-    @apply bg-vibrant-pink;
-  }
-
-  .text-deep-purple {
-    @apply text-deep-purple;
-  }
-
-  .text-bright-blue {
-    @apply text-bright-blue;
-  }
-
-  .text-vibrant-pink {
-    @apply text-vibrant-pink;
-  }
-}
-
 #signup-form input::placeholder {
   color: rgba(255, 255, 255, 0.7);
 }

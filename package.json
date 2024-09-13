@@ -1,16 +1,22 @@
 {
-  "name": "ideacapture-landing-page",
+  "name": "landing-page-chrome-extension",
   "version": "1.0.0",
-  "description": "Landing page for IdeaCapture tool",
-  "main": "index.html",
+  "description": "Landing page for a Chrome extension",
+  "main": "index.js",
   "scripts": {
-    "start": "serve",
-    "build": "tailwindcss build styles.css -o dist/styles.css"
+    "dev": "tailwindcss -i ./input.css -o ./dist/output.css --watch",
+    "build": "tailwindcss -i ./input.css -o ./dist/output.css --minify",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "serve": "^14.0.1"
-  },
+  "keywords": [
+    "chrome-extension",
+    "landing-page",
+    "tailwindcss"
+  ],
+  "author": "Your Name",
+  "license": "ISC",
   "devDependencies": {
-    "tailwindcss": "^2.2.19"
+    "live-server": "^1.2.2",
+    "tailwindcss": "^3.3.0"
   }
 }
