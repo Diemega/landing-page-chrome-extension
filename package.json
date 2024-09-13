@@ -1,0 +1,16 @@
+{
+  "name": "ideacapture-landing-page",
+  "version": "1.0.0",
+  "description": "Landing page for IdeaCapture tool",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve",
+    "build": "tailwindcss build styles.css -o dist/styles.css"
+  },
+  "dependencies": {
+    "serve": "^14.0.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^2.2.19"
+  }
+}
