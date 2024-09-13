@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Inter:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+  }
+}
+
+@layer components {
+  .feature-card, .step-card {
+    @apply bg-white rounded-lg shadow-md p-6 transition-all duration-300 hover:scale-105;
+  }
+
+  .faq-item {
+    @apply bg-white rounded-lg shadow-md p-6 transition-all duration-300 hover:shadow-lg;
+  }
+}
+
+@layer utilities {
+  .bg-deep-purple {
+    @apply bg-deep-purple;
+  }
+
+  .bg-bright-blue {
+    @apply bg-bright-blue;
+  }
+
+  .bg-vibrant-pink {
+    @apply bg-vibrant-pink;
+  }
+
+  .text-deep-purple {
+    @apply text-deep-purple;
+  }
+
+  .text-bright-blue {
+    @apply text-bright-blue;
+  }
+
+  .text-vibrant-pink {
+    @apply text-vibrant-pink;
+  }
+}
+
+#signup-form input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#signup-form input:focus::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-in-out;
+}
